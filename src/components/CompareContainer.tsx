@@ -107,7 +107,7 @@ const CompareContainer = ({
     <div className="compare-container">
       {isEmpty && (
         <div className="empty">
-          <button>
+          <button onClick={() => navigate("/search")}>
             <FaPlus />
           </button>
           <h3>Add Pokemon to Comparison</h3>
@@ -147,7 +147,12 @@ const CompareContainer = ({
             </div>
           </div>
           <div className="compare-action-buttons">
-            <button className="compare-btn" onClick={()=>dispatch(addPokemonToList(pokemon))}>Add</button>
+            <button
+              className="compare-btn"
+              onClick={() => dispatch(addPokemonToList(pokemon))}
+            >
+              Add
+            </button>
             <button
               className="compare-btn"
               onClick={() => navigate(`/pokemon/${pokemon?.id}`)}
