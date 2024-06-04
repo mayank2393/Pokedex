@@ -1,0 +1,88 @@
+.popup-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(25rem);
+  z-index: 10;
+  .popup-body {
+    position: absolute;
+    right: 0;
+    color: white;
+    border: 3px solid white;
+    border-right-color: var(--accent-color);
+    border-top-color: var(--accent-color);
+    height: 100%;
+    width: 30%;
+    z-index: 29;
+    .popup-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      height: 70%;
+      padding: 2rem;
+      .image-wrapper {
+        position: relative;
+        height: 12rem;
+        border-radius: 200rem;
+        background-color: rgba(255, 255, 255, 0.125);
+        // border:  2px solid black;
+        border: 3px solid white;
+        border-right-color: var(--accent-color);
+        border-top-color: var(--accent-color);
+        width: 12rem;
+        margin: auto;
+        overflow: hidden;
+        img {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          object-fit: contain;
+        }
+        .avatar {
+          background-color: blue;
+        }
+        svg {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+      .user-info {
+        color: white;
+        font-size: 1.5rem;
+        letter-spacing: 0.5;
+        text-align: center;
+        font-weight: 200;
+        margin: auto;
+      }
+      .profile-btn {
+        border: 3px solid white;
+        border-right-color: var(--accent-color);
+        border-top-color: var(--accent-color);
+        height: 3.5rem;
+        width: 10rem;
+        border-radius: 5rem;
+        color: white;
+        background-color: transparent;
+        font-size: 1.5rem;
+      }
+      .profile-search-btn {
+        border: 3px solid white;
+        border-right-color: var(--accent-color);
+        border-top-color: var(--accent-color);
+        height: 3.5rem;
+        width: 15rem;
+        border-radius: 5rem;
+        color: white;
+        background-color: transparent;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
